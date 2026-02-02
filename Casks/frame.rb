@@ -1,9 +1,9 @@
 cask "frame" do
   arch arm: "aarch64", intel: "x64"
 
-  version "0.17.0"
-  sha256 arm:   "a05105d082cab41a43af79a28ec4ecf4bc68cb62956576746d8d67836a8b36f5",
-         intel: "e903c50fd9f6e569a3b32f6aab3967669e5fb27790da8bc3baacf0803d21a38c"
+  version "0.18.0"
+  sha256 arm:   "5e8cdc8ce180ee41bb7714c656ddcf0b853d2eb4bdede37782d196d5cc7d1a2b",
+         intel: "f11a043437591725ec01ec4884932a0280cc804871abce7045ddf95860e459d8"
 
   url "https://github.com/66HEX/frame/releases/download/#{version}/Frame_#{version}_#{arch}.dmg"
   name "Frame"
