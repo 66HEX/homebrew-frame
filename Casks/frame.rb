@@ -1,11 +1,11 @@
 cask "frame" do
-  arch arm: "aarch64", intel: "x64"
+  arch arm: "aarch64", intel: "x86_64"
 
-  version "0.29.2"
-  sha256 arm:   "09d7bb26f56b7fa71ab37305021021d9a2e67c833141c9ade7e1b1a20040b93d",
-         intel: "a7dbd45fdc9a302f642f067843bc75be9618a6465e207758e64617be9c9dcb2d"
+  version "0.30.0"
+  sha256 arm:   "f707908273f0e1c86fc4d83e36e7ddbf81ea9a867d62aabff7befdd52951c6ac",
+         intel: "ab39bf9505880a98116d125805cc156f851b22b805085ebedcb597fba670adba"
 
-  url "https://github.com/66HEX/frame/releases/download/#{version}/Frame_#{version}_#{arch}.dmg"
+  url "https://github.com/66HEX/frame/releases/download/#{version}/Frame-#{arch}.dmg"
   name "Frame"
   desc "High-performance media conversion utility"
   homepage "https://github.com/66HEX/frame"
