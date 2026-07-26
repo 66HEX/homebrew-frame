@@ -1,9 +1,9 @@
 cask "frame" do
   arch arm: "aarch64", intel: "x86_64"
 
-  version "0.31.1"
-  sha256 arm:   "f85ee5756b26b7569f99a2e3ddbbce6ee2781c5ef82cf4be2468f373dbf6c4c4",
-         intel: "642cb0fba6b6ee548473f4b29f2ae8338d3d8266fb8869a4c89281177cd92a90"
+  version "0.32.0"
+  sha256 arm:   "8fa9f3e2dc0fe06cc21072d78b5d58903c418e6f1a57db2bf575ee6dc561a6ef",
+         intel: "8e1b9f5794a20a6bed68d4ba24f3d9d4ad715c8e34a4618ef587b89263fc7fb6"
 
   url "https://github.com/66HEX/frame/releases/download/#{version}/Frame-#{arch}.dmg"
   name "Frame"
@@ -21,12 +21,4 @@ cask "frame" do
     "~/Library/Saved Application State/com.66hex.frame.savedState",
   ]
 
-  caveats <<~EOS
-    Frame is not notarized. On first launch, you may need to:
-    1. Right-click the app and select "Open".
-    2. Click "Open" in the security dialog.
-
-    Alternatively, you can run:
-      xattr -dr com.apple.quarantine /Applications/Frame.app
-  EOS
 end
