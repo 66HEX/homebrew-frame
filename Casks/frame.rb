@@ -29,8 +29,8 @@ cask "frame" do
     app_image "Frame-#{arch}.AppImage", target: "Frame.AppImage"
 
     zap trash: [
-      "~/.cache/Frame",
-      "~/.config/Frame",
+      "~/.cache/frame",
+      "~/.config/frame",
     ]
   end
 
